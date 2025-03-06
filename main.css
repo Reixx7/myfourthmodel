@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    
+}
+.container2 {
+    max-width: 1180.27px;
+    min-height: 392.18px;
+    padding: 20px;
+
+}
+
+.form5 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form5 h2 {
+    margin-bottom: 15px;
+}
+
+.form5 input,
+.form5 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form5 textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form5 button {
+    width: 169.49px;
+    /* height: 42.06px; */
+    padding: 10px;
+    background: linear-gradient(to right, #ff0080, #5b00ff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.overlay{
+    z-index: 2;
+}
+@media (max-width: 480px) {
+    .container {
+        max-width: 300px;
+    }
+
+    .form5 input,
+    .form5 textarea {
+        font-size: 14px;
+    }
+    .form5 button{
+        width: 78px;
+        height: 28px;
+        font-size: 9px;
+    }
+}
